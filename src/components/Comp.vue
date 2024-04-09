@@ -106,7 +106,7 @@ export default defineComponent({
     }
 });
 </script> -->
-<script setup>
+<script lang="ts" setup>
 import { defineComponent, ref, PropType, computed, defineProps } from 'vue';
 import { Todo, TitleInfo } from "../type.d.ts";
 // 传入的属性的声明

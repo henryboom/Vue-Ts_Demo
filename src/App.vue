@@ -15,7 +15,7 @@ import Comp from "./components/Comp.vue"
   <!-- <HelloWorld msg="Vite + Vue" /> -->
   <Comp :title-info="{
     value: '待办事项',
-    color: 'green',
+    color: 'green'
   }"></Comp>
 </template>
 
