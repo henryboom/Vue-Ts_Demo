@@ -107,8 +107,8 @@ export default defineComponent({
 });
 </script> -->
 <script lang="ts" setup>
-import { ref, PropType, computed, defineProps } from 'vue';
-import { Todo, TitleInfo } from "../type.d.ts";
+import { defineComponent, ref, PropType, computed, defineProps } from 'vue';
+import { Todo, TitleInfo } from "../type.ts";
 // 传入的属性的声明
 defineProps({
     titleInfo: {
@@ -164,8 +164,7 @@ items.value.push({
     completed: false
 })
 //新增输入的待办事项
-const newTodo = (todoName: string):
-    Todo => {
+const newTodo = (todoName: string): Todo => {
     return {
         id: items.value.length + 1,
         name: todoName,
